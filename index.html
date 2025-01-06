@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Lam - Data Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            margin: 1rem 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: #2c3e50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>Brandon Lam</h1>
+                <p>Data Scientist | Financial Analysis Expert</p>
+                <div class="contact-info">
+                    <a href="mailto:ming0701@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/brandon-lam-5817b520/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/YourGithubUsername" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Data Scientist with over 10 years of experience in financial modeling, M&A, and corporate finance. Combining advanced data analytics and machine learning expertise with strong business acumen to drive strategic outcomes.</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Australia Rainfall Prediction</h3>
+                    <p>Developed an ensemble predictive machine learning model on AWS to forecast daily rainfall using Spark.</p>
+                    <a href="your-project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Customer Segmentation</h3>
+                    <p>Implemented unsupervised learning model to cluster customers for effective lead generation at Corporate Finance Institute.</p>
+                    <a href="your-project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>IMDb Visualization App</h3>
+                    <p>Developed a Dash-based visualization app for interactive movie and actor data exploration.</p>
+                    <a href="your-project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Financial Analysis</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
