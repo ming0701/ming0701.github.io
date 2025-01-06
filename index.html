@@ -9,16 +9,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         body {
             line-height: 1.6;
-            color: #333;
+            color: #2c3e50;
+            background-color: #f8f9fa;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -26,42 +27,64 @@
         header {
             background: #2c3e50;
             color: white;
-            padding: 2rem 0;
-            margin-bottom: 2rem;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
         }
 
         .hero {
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0;
         }
 
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            font-weight: 700;
         }
 
         .hero p {
             font-size: 1.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            color: #ecf0f1;
         }
 
         .contact-info {
-            margin: 1rem 0;
+            margin: 1.5rem 0;
         }
 
         .contact-info a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
         }
 
         section {
-            margin: 2rem 0;
+            margin: 3rem 0;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+            font-size: 1.1rem;
+            color: #34495e;
+            line-height: 1.8;
         }
 
         h2 {
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
         }
 
         .projects {
@@ -72,29 +95,43 @@
         }
 
         .project-card {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
         }
 
-        .skill-tag {
-            background: #2c3e50;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
+        .project-card p {
+            color: #576574;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .project-card a {
+            display: inline-block;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 2px solid #2c3e50;
+            transition: all 0.3s ease;
+        }
+
+        .project-card a:hover {
+            color: #34495e;
+            border-bottom-color: #34495e;
         }
 
         @media (max-width: 768px) {
@@ -104,6 +141,11 @@
             
             .projects {
                 grid-template-columns: 1fr;
+            }
+
+            .about {
+                padding: 0 1rem;
+                font-size: 1rem;
             }
         }
     </style>
@@ -124,52 +166,37 @@
     </header>
 
     <main class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>Data Scientist with over 10 years of experience in financial modeling, M&A, and corporate finance. Combining advanced data analytics and machine learning expertise with strong business acumen to drive strategic outcomes.</p>
+        <section class="about">
+            <p>Data Scientist with over 10 years of experience in financial modeling, M&A, and corporate finance. Specialized in leveraging data-driven insights and machine learning solutions to solve complex business challenges and drive strategic outcomes.</p>
         </section>
 
         <section>
-            <h2>Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="projects">
                 <div class="project-card">
                     <h3>Australia Rainfall Prediction</h3>
-                    <p>Developed an ensemble predictive machine learning model on AWS to forecast daily rainfall using Spark.</p>
-                    <a href="https://github.com/UBC-MDS/DSCI525_group02">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Customer Segmentation</h3>
-                    <p>Implemented unsupervised learning model to cluster customers for effective lead generation at Corporate Finance Institute.</p>
+                    <p>Developed an ensemble predictive machine learning model on AWS to forecast daily rainfall using Spark, achieving high accuracy in weather pattern predictions.</p>
+                    <a href="https://github.com/UBC-MDS/DSCI525_group02">View Project →</a>
                 </div>
                 <div class="project-card">
                     <h3>IMDb Visualization App</h3>
-                    <p>Developed a Dash-based visualization app for interactive movie and actor data exploration.</p>
-                    <a href="https://github.com/UBC-MDS/imdb_dashboard/">View Project</a>
+                    <p>Created an interactive Dash-based visualization application for exploring movie and actor data, enabling intuitive analysis of entertainment industry trends.</p>
+                    <a href="https://github.com/UBC-MDS/imdb_dashboard/">View Project →</a>
                 </div>
-                              <div class="project-card">
-                    <h3>Canada covid metrics software development</h3>
-                    <p>Developed Python and R packages to extract key COVID-19 metrics using APIs</p>
-                    <a href="https://github.com/UBC-MDS/CanadaCovidMetrics">View Project</a>
+                <div class="project-card">
+                    <h3>Canada COVID Metrics</h3>
+                    <p>Engineered Python and R packages to extract and analyze key COVID-19 metrics via APIs, facilitating data-driven public health insights.</p>
+                    <a href="https://github.com/UBC-MDS/CanadaCovidMetrics">View Project →</a>
                 </div>
-                              <div class="project-card">
-                    <h3>Hypothesis testing for age and medal association in Olympic games</h3>
-                    <p>Automated data science workflows to streamline statistical analysis processes</p>
-                    <a href="https://github.com/UBC-MDS/olympic_medal_htest">View Project</a>
+                <div class="project-card">
+                    <h3>Olympic Games Analysis</h3>
+                    <p>Conducted hypothesis testing to analyze age-medal associations in Olympic games, automating statistical workflows for efficient data analysis.</p>
+                    <a href="https://github.com/UBC-MDS/olympic_medal_htest">View Project →</a>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Deep Learning</span>
-                <span class="skill-tag">Tableau</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Financial Analysis</span>
+                <div class="project-card">
+                    <h3>Customer segmentation – Corporate Finance Institute</h3>
+                    <p>Developed and implemented an unsupervised learning model to cluster customers for effective lead generation in marketing campaigns at Corporate Finance Institute.</p>
+                </div>
             </div>
         </section>
     </main>
